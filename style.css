@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: coral;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.container-one {
+    width: 30vw;
+    min-height: 50vh;
+    border: 3px solid #fff;
+    border-top-left-radius: 50px;
+    box-shadow: 10px 10px 25px rgb(255, 255, 255, 0.7);
+}
+
+.container-one h2 {
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.container-one h3 {
+    margin-left: 5vw;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding-top: 5vh;
+}
+
+form input {
+    display: block;
+    width: 60%;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    padding: 5px 5px;
+    background: coral;
+    border-bottom: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000;
+    font-size: 16px;
+}
+
+form input::placeholder {
+    color: rgb(99, 95, 95);
+}
+
+form input:focus {
+    outline: transparent;
+}
+
+form button {
+    width: 10vw;
+    padding: 1vh;
+    color: coral;
+    text-transform: uppercase;
+    background: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 0.7);
+    margin-top: 2vh;
+    margin-left: 10vw;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+.container-two button {
+    width: 10vw;
+    margin-left: 10vw;
+    padding: 1vh;
+    color: coral;
+    text-transform: uppercase;
+    background: #000;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(0, 0, 0, 0.7);
+    margin-top: 2vh;
+    margin-left: 10vw;
+    font-size: 16px;
+    letter-spacing: .5px;
+    margin-bottom: 2vh;
+    display: none;
+}
+
+ul {
+    border: 2px solid #fff;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    padding: 5vw 1vh;
+    list-style: none;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+li {
+    padding: 1vh 1vw;
+    border-bottom: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li a {
+    font-size: 22px;
+}
+
+li i {
+    padding-left: 20px;
+}
+
+footer {
+    background: #000;
+    width: 100vw;
+    color: coral;
+    margin-bottom: 0;
+    margin-top: 5vh;
+}
+
+footer h4 {
+    padding: 1vh 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media (max-width:1448px) {
+    .container-one {
+        width: 60vw;
+    }
+    form input {
+        width: 90%;
+        margin-left: 5%;
+    }
+    form button {
+        font-size: 14px;
+        width: auto;
+        padding: 1vh 3vw;
+    }
+    ul {
+        margin-bottom: 2vh;
+    }
+    .container-two button {
+        font-size: 14px;
+        width: auto;
+        margin-top: 0vh;
+        padding: 1vh 3vw;
+    }
+}
+
+@media (max-width:558px) {
+    .container-one {
+        width: 90vw;
+    }
+}
